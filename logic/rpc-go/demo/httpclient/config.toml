@@ -1,0 +1,86 @@
+
+
+
+[server]
+#服务名称
+service_name="seedservice"
+port = 22281
+
+[server.tcp]
+	idle_timeout = 1000
+	keeplive_interval = 1000
+
+[server.http]
+	location=""
+	logResponse=""
+
+
+[monitor]
+ alive_interval=10
+
+
+[log]
+  level="debug"
+  accesslog="./log/access.log"
+  errlog = "./log/error.log"
+  businesslog="./log/business.log"
+  serverlog="./log/server.log"
+  statlog="./log/stat.log" 
+
+[[redis]]
+  server_name="redis_server"
+  addr="8b411a408f5249a3566.redis.rds.aliyuncs.com:6379"
+  password="Meelive2015"
+  max_idle=100
+  max_active=100
+  idle_timeout=1000
+  connect_timeout=300
+  read_timeout=100
+  write_timeout=100
+  database=0
+
+
+[[server_client]]
+	service_name="live.checksid"
+	proto="http"
+	endpoints="10.24.189.121:6001,10.24.195.49:6005"
+	balancetype="roundrobin"
+	read_timeout=100
+	retry_times=1
+
+
+[[server_client]]
+  service_name="simpleall"
+  proto="http"
+  endpoints="10.24.189.121:6001,10.24.195.49:6005"
+  balancetype="roundrobin"
+  read_timeout=100
+  retry_times=1
+
+
+[[server_client]]
+  service_name="servicerpc"
+  proto="rpc"
+  endpoints="10.24.189.121:6000,10.24.195.49:6000"
+  balancetype="roundrobin"
+  read_timeout=100
+  retry_times=1
+
+
+[[kafka_producer_client]]
+	producer_to = "DSJ-BjAly-KafkaA"
+	kafka_broken="DSJ-BjAly-KafkaA-01:9092,DSJ-BjAly-KafkaA-02:9092"
+	retrymax=1
+
+[[kafka_consume]]
+	consume_from="kafka2"
+	zkpoints="10.25.96.167:2181"
+	topic = "inke_applog_stream"
+	group = "zlz_testgroup_2"
+	initoffset=  -1
+	process_timeout = 10
+	commit_interval = 10
+
+ 
+
+

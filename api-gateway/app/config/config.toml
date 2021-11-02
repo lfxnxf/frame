@@ -1,0 +1,10 @@
+
+[server]
+	service_name="api-gateway"
+	port = 10000
+
+[log]
+	level="debug"
+	logpath="logs"
+	rotate="hour"
+

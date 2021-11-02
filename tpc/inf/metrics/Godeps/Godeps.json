@@ -1,0 +1,98 @@
+{
+  "ImportPath": "github.com/lfxnxf/frame/tpc/inf/metrics",
+  "GoVersion": "go1.13",
+  "InkedepVersion": "2.0",
+  "Deps": [
+    {
+      "ImportPath": "golang.org/x/net",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "go.uber.org/multierr",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "go.uber.org/atomic",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/stretchr/testify",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/rcrowley/go-metrics",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/pkg/errors",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/olekukonko/tablewriter",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/modern-go/reflect2",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/modern-go/concurrent",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/mattn/go-runewidth",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/json-iterator/go",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/lfxnxf/frame/BackendPlatform/jaeger-client-go",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/lfxnxf/frame/BackendPlatform/golang",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    }
+  ]
+}

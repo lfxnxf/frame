@@ -1,0 +1,14 @@
+{
+  "ImportPath": "github.com/lfxnxf/frame/tpc/inf/go-upstream",
+  "GoVersion": "go1.11",
+  "InkedepVersion": "2.0",
+  "Deps": [
+    {
+      "ImportPath": "github.com/lfxnxf/frame/BackendPlatform/golang",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    }
+  ]
+}

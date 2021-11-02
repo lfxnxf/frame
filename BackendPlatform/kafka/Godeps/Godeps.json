@@ -1,0 +1,84 @@
+{
+  "ImportPath": "github.com/lfxnxf/frame/BackendPlatform/kafka",
+  "GoVersion": "go1.12",
+  "InkedepVersion": "2.0",
+  "Deps": [
+    {
+      "ImportPath": "github.com/wvanbergen/kazoo-go",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/samuel/go-zookeeper",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/rcrowley/go-metrics",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/pierrec/lz4",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/golang/snappy",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/eapache/queue",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/eapache/go-xerial-snappy",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/eapache/go-resiliency",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/davecgh/go-spew",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/Shopify/sarama",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/DataDog/zstd",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    }
+  ]
+}

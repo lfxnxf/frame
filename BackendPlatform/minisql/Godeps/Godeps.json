@@ -1,0 +1,28 @@
+{
+  "ImportPath": "github.com/lfxnxf/frame/BackendPlatform/minisql",
+  "GoVersion": "go1.13",
+  "InkedepVersion": "2.0",
+  "Deps": [
+    {
+      "ImportPath": "github.com/smartystreets/goconvey",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/smartystreets/assertions",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/jtolds/gls",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    }
+  ]
+}

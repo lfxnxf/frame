@@ -1,0 +1,10 @@
+name="rpcdemo"
+[server]
+	service_name="rpcdemo"
+	port = 10000
+
+[log]
+	level="debug"
+	logpath="logs"
+	rotate="hour"
+
