@@ -15,6 +15,7 @@ import (
 )
 
 func init() {
+	
 	configS := flag.String("config", "config/config.toml", "Configuration file")
 	appS := flag.String("app", "", "App dir")
 	flag.Parse()
