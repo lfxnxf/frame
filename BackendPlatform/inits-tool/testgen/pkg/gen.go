@@ -200,7 +200,7 @@ func (p *Parse) genTestMain() (err error) {
 		vars, mainFunc     string
 		content            []byte
 		instance, confFunc string
-		tomlPath           = "./config/ali-test/config.toml"
+		tomlPath           = "./config/test/config.toml"
 		filename           = strings.Replace(p.Path, ".go", "_test.go", -1)
 	)
 	instance = ConvertMethod(p.Path)
@@ -240,7 +240,7 @@ func (p *Parse) genOldTestMain(tp string) (err error) {
 		impts    string
 		mainFunc string
 		content  []byte
-		tomlPath = "./config/ali-test/config.toml"
+		tomlPath = "./config/test/config.toml"
 		filename = "main_test.go"
 	)
 	mainFunc = tpOldTestMain

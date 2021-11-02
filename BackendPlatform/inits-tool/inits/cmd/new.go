@@ -106,7 +106,7 @@ var (
 		_tplTypeHTTPERRCode:   {Name: "api/code/code.go", T: _tplERRCode},
 		_tplTypeHTTPMain:      {Name: "app/main.go", T: _tplHMain},
 		_tplTypeBuild:         {Name: "app/build.sh", T: _tplBuild},
-		_tplTypeAppToml:       {Name: "app/config/ali-test/config.toml", T: _tplHAppToml},
+		_tplTypeAppToml:       {Name: "app/config/test/config.toml", T: _tplHAppToml},
 		_tplTypeHTTPConfig:    {Name: "conf/config.go", T: _tplHConfig},
 		_tplTypeHTTPDao:       {Name: "dao/dao.go", T: _tplHDao},
 		_tplTypeHTTPManager:   {Name: "manager/manager.go", T: _tplHManager},
