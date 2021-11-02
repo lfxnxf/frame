@@ -1,0 +1,182 @@
+{
+  "ImportPath": "github.com/lfxnxf/frame/BackendPlatform/jaeger-client-go",
+  "GoVersion": "go1.11",
+  "InkedepVersion": "2.0",
+  "Deps": [
+    {
+      "ImportPath": "golang.org/x/text",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "golang.org/x/sys",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "golang.org/x/net",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "golang.org/x/crypto",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/uber/jaeger-lib",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/uber-go/tally",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/stretchr/testify",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/prometheus/procfs",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/prometheus/common",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/prometheus/client_model",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/prometheus/client_golang",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/pmezard/go-difflib",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/opentracing/opentracing-go",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/matttproud/golang_protobuf_extensions",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/influxdata/influxdb1-client",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/golang/protobuf",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/golang/mock",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/go-logfmt/logfmt",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/go-kit/kit",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/davecgh/go-spew",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/codahale/hdrhistogram",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/beorn7/perks",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/apache/thrift",
+      "Custom": {
+        "SpecificTag": "0.10.0",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/VividCortex/gohistogram",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "git.apache.org/thrift.git",
+      "Custom": {
+        "SpecificTag": "0.10.0",
+        "SpecificRev": ""
+      }
+    }
+  ]
+}

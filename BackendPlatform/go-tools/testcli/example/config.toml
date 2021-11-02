@@ -1,0 +1,92 @@
+[app_conf]
+    source_type = 9999
+    source_type_key = "cd372d198f0c7b7eb773049ba67c09c1"
+    system_uid = 181918
+    h5_user_bag_page = "https://testboc.inke.cn:818/innerapp/virtual-props-shop/packet/index.html"
+
+[thrift]
+    host = "10.55.3.192"
+    port = "2060"
+    initial_cap = 12
+    max_cap = 12
+    idle_timeout = 1000
+
+[server]
+	service_name="busi.privilege.new_shopping"
+	port = 9098
+
+[log]
+    level="debug"
+    rotate="hour"
+    logpath = "logs"
+    succ_stat_code=[499,780,781,782]
+
+[[database]]
+    name="busi.privilege.new_shopping-mysql"
+    master = "admin_user:ar46yJv34jfd@tcp(rm-2zel0996j0yjzc52w.mysql.rds.aliyuncs.com:3306)/shopping_store?charset=utf8&parseTime=true&loc=Local"
+    slaves = ["admin_user:ar46yJv34jfd@tcp(rm-2zel0996j0yjzc52w.mysql.rds.aliyuncs.com:3306)/shopping_store?charset=utf8&parseTime=true&loc=Local"]
+
+[[server_client]]
+    service_name="user.profile.gateway"
+    endpoints="10.55.3.195:8089"
+    proto="http"
+    balancetype="roundrobin"
+    read_timeout=200
+    retry_times=0
+    slow_time = 200
+    #endpoints_from="consul"
+
+[[server_client]]
+    service_name="busi.privilege.user_bag"
+    endpoints="ali-a-cbc-testing01.bj:10000"
+    proto="http"
+    balancetype="roundrobin"
+    read_timeout=200
+    retry_times=1
+    slow_time = 200
+    #endpoints_from="consul"
+
+[[server_client]]
+    service_name="user.message.logic"
+    endpoints="10.55.3.195:22582"
+    proto="http"
+    balancetype="roundrobin"
+    read_timeout=200
+    retry_times=0
+    slow_time = 200
+    #  endpoints_from="consul"
+
+
+[[redis]]
+    server_name="busi.privilege.new_shopping-redis"
+    addr="10.55.3.194:6801"
+    password=""
+    max_idle=100
+    max_active=500
+    idle_timeout=6000
+    connect_timeout=100
+    read_timeout=100
+    write_timeout=100
+    database=0
+    slow_time = 200
+    retry=0
+
+[[kafka_producer_client]]
+    producer_to = "busi.privilege.new_shopping-kafka"
+#    kafka_broken="10.55.3.218:9092,10.55.3.219:9092,10.55.3.220:9092"
+    kafka_broken="ali-a-inf-kafka-test11.bj:9092,ali-c-inf-kafka-test12.bj:9092,ali-a-inf-kafka-test13.bj:9092"
+    topic=""
+    retrymax=1
+    get_error = true
+    get_success = true
+    required_acks="WaitForAll"
+    use_sync=true
+[[kafka_producer_client]]
+    producer_to = "busi.privilege.new_shopping-kafka"
+    kafka_broken="ali-a-inf-kafka-test11.bj:9092,ali-c-inf-kafka-test12.bj:9092,ali-a-inf-kafka-test13.bj:9092"
+    topic="my_kafka_topic"
+    retrymax=1
+    get_error = true
+    get_success = true
+    required_acks="WaitForAll"
+    use_sync=true

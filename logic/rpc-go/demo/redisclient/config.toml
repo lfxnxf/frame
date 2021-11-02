@@ -1,0 +1,44 @@
+[[redis]]
+	# This option used to stat upload and GetRedis method
+	server_name="redis1"
+
+	# Redis server host and port
+	addr="localhost:6379" 	
+
+	# Redis server password
+	password=""
+
+	# Maximum number of idle connections in the pool.
+	max_idle=100
+
+	# Maximum number of connections allocated by the pool at a given time. 
+	# When zero, there is no limit on the number of connections in the pool.
+	max_active=100 
+
+	# Close connections after remaining idle for this duration. If the value
+	# is zero, then idle connections are not closed. Applications should set
+	# the timeout to a value less than the server connection timeout.
+	idle_timeout=1000
+
+	# Specifies the timeout for connecting to the Redis server.
+	connect_timeout=1000
+
+	# Specifies the timeout for reading a single command.
+	read_timeout=1000
+
+	# Specifies the timeout for writing a single command.
+	write_timeout=1000
+
+	#Specifies the database to select when dialing a connection.
+	database=0
+[[redis]]
+	server_name="redis22"
+	addr="localhost:6379"
+	password=""
+	max_idle=100
+	max_active=100
+	idle_timeout=1000
+	connect_timeout=1000
+	read_timeout=1000
+	write_timeout=1000
+	database=1

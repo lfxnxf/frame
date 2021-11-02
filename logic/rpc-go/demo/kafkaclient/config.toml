@@ -1,0 +1,20 @@
+[server]
+	service_name="kafkaclient-test"
+
+[[kafka_consume]]
+consume_from="kafka-test"
+zkpoints="ali-a-inf-kafka-test11.bj:2181,ali-c-inf-kafka-test12.bj:2181,ali-a-inf-kafka-test13.bj:2181/config/inke/inf/mq/kafka-test"
+topic = "test"
+group = "test"
+initoffset=  -1
+process_timeout = 10
+commit_interval = 10
+get_error = true
+
+
+[[kafka_producer_client]]
+producer_to = "kafka-test"
+kafka_broken="ali-a-inf-kafka-test11.bj:9092,ali-c-inf-kafka-test12.bj:9092,ali-a-inf-kafka-test13.bj:9092"
+retrymax=3
+use_sync=true
+request_timeout=10

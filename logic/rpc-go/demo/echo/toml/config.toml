@@ -1,0 +1,48 @@
+
+
+[server]
+service_name="echo.EchoService"
+port = 6370
+
+ [server.tcp]
+ 	idle_timeout=120
+ 	keepalink_interval=120
+ [server.http]
+  	location=""
+  	logResponse=""
+
+ [trace]
+ 	port=5803
+
+[log]
+        logpath="log/"
+	level="debug"
+
+
+[[server_client]]
+	service_name="service1"
+	proto="http"
+	endpoints="116.211.167.106:80,127.0.0.1:7832"
+	balancetype="roundrobin"
+	read_timeout=3000
+	retry_times = 1
+
+[[server_client]]
+	service_name="roombuss"
+	proto="rpc"
+	endpoints="10.111.242.23:3201"
+	balancetype="random"
+	connnect_timeout=1100
+	read_timeout=1000
+	write_timeout=1110
+	max_idleconn = 50
+
+[[server_client]]
+	service_name="test"
+	proto="http"
+	endpoints="192.168.40.22:8084"
+	balancetype="random"
+	connnect_timeout=1100
+	read_timeout=1000
+	write_timeout=1110
+	max_idleconn = 50

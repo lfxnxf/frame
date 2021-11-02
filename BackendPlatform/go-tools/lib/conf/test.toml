@@ -1,0 +1,11 @@
+[server]
+    service_name="user.info.demo"
+    port = 11705
+
+[[server_client]]
+    service_name="user.profile.gateway"
+    proto="http"
+    endpoints="10.111.6.202:8089"
+    balancetype="roundrobin"
+    read_timeout=1000
+    retry_times=1

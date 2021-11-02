@@ -1,0 +1,42 @@
+{
+  "ImportPath": "github.com/lfxnxf/frame/tpc/inf/ikio",
+  "GoVersion": "go1.11",
+  "InkedepVersion": "2.0",
+  "Deps": [
+    {
+      "ImportPath": "github.com/modern-go/reflect2",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/modern-go/concurrent",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/json-iterator/go",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/lfxnxf/frame/tpc/inf/metrics",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    },
+    {
+      "ImportPath": "github.com/lfxnxf/frame/BackendPlatform/golang",
+      "Custom": {
+        "SpecificTag": "master",
+        "SpecificRev": ""
+      }
+    }
+  ]
+}

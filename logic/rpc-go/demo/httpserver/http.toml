@@ -1,0 +1,48 @@
+[server]
+	service_name="long_link_proxy"
+	port = 6270
+
+[trace]
+port = 4041
+
+ [server.http]
+  	location="/hello,/test,/echo,/sql,/panic"
+  	logResponse="true,true,true,false,false"
+
+
+[log]
+	level="debug"
+	logpath="./log/"
+
+[data_log]
+path="./log/trans.log"
+rotate="day"
+task="task_name"
+
+
+[[server_client]]
+service_name="long_link_proxy"
+proto="http"
+endpoints=""
+balancetype="roundrobin"
+read_timeout=1000
+retry_times=1
+slow_time=200
+
+[[server_client]]
+service_name="echo.EchoService"
+proto="rpc"
+endpoints=""
+balancetype="roundrobin"
+read_timeout=1000
+retry_times=0
+slow_time=200
+
+[[server_client]]
+  service_name="WeiboService"
+  proto="https"
+  endpoints="api.weibo.com:443"
+  balancetype="roundrobin"
+  read_timeout=3000
+  retry_times=1
+  slow_time = 200
