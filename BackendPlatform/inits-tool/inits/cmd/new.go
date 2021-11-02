@@ -135,9 +135,9 @@ var newCmd = &cobra.Command{
 		return
 	},
 	RunE: func(cmd *cobra.Command, args []string) error {
-		if !strings.HasPrefix(p.Dir, path.Join(os.Getenv("GOPATH"), "src")) {
-			return errors.New("must under the GOPATH/src to create project")
-		}
+		//if !strings.HasPrefix(p.Dir, path.Join(os.Getenv("GOPATH"), "src")) {
+		//	return errors.New("must under the GOPATH/src to create project")
+		//}
 		if !isInstall("protoc-gen-tyc") {
 			install("go", "", nil, "get", "-v", "-u", "github.com/lfxnxf/frame/BackendPlatform/inits-tool/protoc-gen-tyc")
 			err := install("go", p.Dir,
