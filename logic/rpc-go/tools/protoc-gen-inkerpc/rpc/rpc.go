@@ -20,8 +20,8 @@ const generatedCodeVersion = 4
 // relative to the import_prefix of the generator.Generator.
 const (
 	contextPkgPath = "golang.org/x/net/context"
-	rpcPkgPath     = "github.com/lfxnxf/frame/inkelogic/rpc-go"
-	descPkgPath    = "github.com/lfxnxf/frame/inkelogic/rpc-go/desc"
+	rpcPkgPath     = "github.com/lfxnxf/frame/logic/rpc-go"
+	descPkgPath    = "github.com/lfxnxf/frame/logic/rpc-go/desc"
 )
 
 func init() {

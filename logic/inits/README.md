@@ -44,13 +44,13 @@
 3. 然后你可以使用如下命令来安装Inits.
 
 ```sh
-$ go get -u github.com/lfxnxf/frame/inkelogic/inits
+$ go get -u github.com/lfxnxf/frame/logic/inits
 ```
 
 4. 使用的时候，把它导入到你的代码中:
 
 ```go
-import "github.com/lfxnxf/frame/inkelogic/inits"
+import "github.com/lfxnxf/frame/logic/inits"
 ```
 ## 代码生成工具
 
@@ -201,7 +201,7 @@ service EchoService {
 2. 你可以运行下面的Go命令来安装Inits RPC插件。
 
 ```sh
-GOBIN=/usr/local/bin go install github.com/lfxnxf/frame/inkelogic/inits/cmd/protoc-gen-inits
+GOBIN=/usr/local/bin go install github.com/lfxnxf/frame/logic/inits/cmd/protoc-gen-inits
 ```
 当执行完上面的命令时，Inits RPC插件protoc-gen-inits将会安装在/usr/local/bin目录下面
 
@@ -227,7 +227,7 @@ protoc  --inits_out=plugins=rpc:./ *.proto
 
 ```sh
 # assume in the following directory
-$GOPATH/src/github.com/lfxnxf/frame/inkelogic/inits/examples/rpcserver
+$GOPATH/src/github.com/lfxnxf/frame/logic/inits/examples/rpcserver
 ```
 
 ```go
@@ -320,7 +320,7 @@ Inits HTTP是公司内部的http框架，为业务提供便捷的搭建HTTP服�
 使用inkedep工具来下载inits框架包，inkedep工具的安装方法请见[inkedep](https://wiki.inkept.cn/display/INKE/inkedep-v2)。
 
 ```shell
-inkedep get github.com/lfxnxf/frame/inkelogic/inits
+inkedep get github.com/lfxnxf/frame/logic/inits
 ```
 
 在项目中导入http相关的依赖包：

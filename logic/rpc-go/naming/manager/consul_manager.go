@@ -5,7 +5,7 @@ import (
 	log "github.com/lfxnxf/frame/BackendPlatform/golang/logging"
 	"sync"
 	"time"
-	// consul "github.com/lfxnxf/frame/inkelogic/rpc-go/discovery/consul"
+	// consul "github.com/lfxnxf/frame/logic/rpc-go/discovery/consul"
 	"github.com/lfxnxf/frame/BackendPlatform/golang/discovery/consul"
 	naming "github.com/lfxnxf/frame/logic/rpc-go/naming"
 )

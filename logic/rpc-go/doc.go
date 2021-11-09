@@ -35,4 +35,4 @@
 //	 write_timeout=1000
 //	 database=0
 //
-package rpc // import "github.com/lfxnxf/frame/inkelogic/rpc-go"
+package rpc // import "github.com/lfxnxf/frame/logic/rpc-go"

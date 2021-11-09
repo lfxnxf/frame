@@ -203,7 +203,7 @@ func (s *server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	ctx.extractBaggage()
 
 	ext.PeerService.Set(span, ctx.Peer)
-	ext.Component.Set(span, "inkelogic/go-http-server")
+	ext.Component.Set(span, "logic/go-http-server")
 	span.LogFields(opentracinglog.String("event", "beginServe"))
 	if !s.options.reqBodyLogOff && r.Body != nil {
 		// piece reader
@@ -268,7 +268,7 @@ func (s *server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		ctx.writeHeaderOnce()
 	}
 
-	span.SetTag("inkelogic.code", ctx.BusiCode())
+	span.SetTag("logic.code", ctx.BusiCode())
 	ext.HTTPStatusCode.Set(span, uint16(code))
 
 	if isSampled {

@@ -221,7 +221,7 @@ func (c *client) sender() core.Plugin {
 		}
 		span.SetOperationName(fmt.Sprintf("HTTP Client %s %s", nReq.Method, nReq.URL.Path))
 		ext.PeerService.Set(span, c.options.serviceName)
-		ext.Component.Set(span, "inkelogic/go-httpclient")
+		ext.Component.Set(span, "logic/go-httpclient")
 
 		spanCtx := span.Context()
 		if sc, ok := spanCtx.(jaeger.SpanContext); ok {

@@ -1,5 +1,5 @@
 {
-  "ImportPath": "github.com/lfxnxf/frame/inkelogic/inits",
+  "ImportPath": "github.com/lfxnxf/frame/logic/inits",
   "GoVersion": "go1.13",
   "InkedepVersion": "2.0",
   "Deps": [

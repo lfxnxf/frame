@@ -8,19 +8,19 @@
 
 - 克隆rpc-go工程
   ```shell
-  mkdir -p ${GOPATH}/src/github.com/lfxnxf/frame/inkelogic;
-  cd ${GOPATH}/src/github.com/lfxnxf/frame/inkelogic
+  mkdir -p ${GOPATH}/src/github.com/lfxnxf/frame/logic;
+  cd ${GOPATH}/src/github.com/lfxnxf/frame/logic
   git clone git@code.inke.cn:BackendPlatform/rpc-go.git
   ```
   或者使用go get命令直接安装
   ```
-  go get github.com/lfxnxf/frame/inkelogic/rpc-go
+  go get github.com/lfxnxf/frame/logic/rpc-go
   ```
 
 - 安装rpc代码生成工具
 
   ```sheel
-  go install github.com/lfxnxf/frame/inkelogic/rpc-go/tools/protoc-gen-inkerpc
+  go install github.com/lfxnxf/frame/logic/rpc-go/tools/protoc-gen-inkerpc
   ```
 
 ## 使用

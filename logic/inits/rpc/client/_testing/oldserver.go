@@ -1,8 +1,8 @@
 package _test
 
 //import (
-//	old "github.com/lfxnxf/frame/inkelogic/inits/rpc/client/_testing/old"
-//	rpc "github.com/lfxnxf/frame/inkelogic/rpc-go"
+//	old "github.com/lfxnxf/frame/logic/inits/rpc/client/_testing/old"
+//	rpc "github.com/lfxnxf/frame/logic/rpc-go"
 //	"golang.org/x/net/context"
 //)
 //

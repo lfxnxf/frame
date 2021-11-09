@@ -3,7 +3,7 @@ package server
 import (
 	"errors"
 	"golang.org/x/net/context"
-	//"github.com/lfxnxf/frame/inkelogic/inits/rpc/codec"
+	//"github.com/lfxnxf/frame/logic/inits/rpc/codec"
 	"github.com/stretchr/testify/assert"
 	"reflect"
 	"testing"

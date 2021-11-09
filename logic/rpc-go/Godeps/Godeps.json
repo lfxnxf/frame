@@ -1,5 +1,5 @@
 {
-  "ImportPath": "github.com/lfxnxf/frame/inkelogic/rpc-go",
+  "ImportPath": "github.com/lfxnxf/frame/logic/rpc-go",
   "GoVersion": "go1.13",
   "InkedepVersion": "2.0",
   "Deps": [
@@ -557,7 +557,7 @@
       }
     },
     {
-      "ImportPath": "github.com/lfxnxf/frame/inkelogic/inits",
+      "ImportPath": "github.com/lfxnxf/frame/logic/inits",
       "Custom": {
         "SpecificTag": "master",
         "SpecificRev": ""

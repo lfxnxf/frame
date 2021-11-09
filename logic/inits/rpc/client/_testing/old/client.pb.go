@@ -12,8 +12,8 @@ import fmt "fmt"
 import math "math"
 
 import (
-	rpc "github.com/lfxnxf/frame/inkelogic/rpc-go"
-	desc "github.com/lfxnxf/frame/inkelogic/rpc-go/desc"
+	rpc "github.com/lfxnxf/frame/logic/rpc-go"
+	desc "github.com/lfxnxf/frame/logic/rpc-go/desc"
 	context "golang.org/x/net/context"
 )
 
