@@ -7,13 +7,13 @@ package school_http
  */
 
 const (
-	ClientPlatformParents  = "parents"  // 家长
-	ClientPlatformBusiness = "business" // 运营
+	ClientPlatformDriver  = 1 // 司机
+	ClientPlatformParents = 2 // 家长
 )
 
 type Atom struct {
 	Uid            int64  `json:"uid" schema:"uid" url:"uid"`                   // 用户uid
-	ClientPlatform string `json:"client_platform" schema:"client_platform"`     // 客户端平台
+	ClientPlatform int64  `json:"client_platform" schema:"client_platform"`     // 客户端平台
 	Sid            string `json:"sid" schema:"sid" url:"sid"`                   // 用户登录 session id
 	CV             string `json:"cv" schema:"cv" url:"cv"`                      // 客户端版本。示例：GA1.0.50_Android
 	Cpu            string `json:"cpu" schema:"cpu" url:"cpu"`                   // cpu型号。示例：%5BAdreno_%28TM%29_308%5D%5BAArch64_638_Qualcomm_Technologies%2C_Inc_MSM8917%5D
