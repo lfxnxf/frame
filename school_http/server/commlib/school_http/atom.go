@@ -7,8 +7,8 @@ package school_http
  */
 
 const (
-	ClientPlatformParents = "parents"
-	ClientPlatform        = "parents"
+	ClientPlatformParents  = "parents"  // 家长
+	ClientPlatformBusiness = "business" // 运营
 )
 
 type Atom struct {
