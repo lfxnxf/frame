@@ -27,6 +27,7 @@ var rootCmd = &cobra.Command{
 }
 
 func checkAndRunSelfUpdate() bool {
+	return false
 	if _, exist := os.LookupEnv("MODE"); exist {
 		return false
 	}
