@@ -2,13 +2,10 @@ package cmd
 
 import (
 	"fmt"
-	"net/http"
 	"os"
 	"os/exec"
-	"time"
 
 	"github.com/spf13/cobra"
-	gitlab "github.com/xanzy/go-gitlab"
 )
 
 var rootCmd = &cobra.Command{
